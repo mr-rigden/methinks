@@ -43,10 +43,7 @@ blockquote {
     padding: 0;
     margin: 0;
     padding-left: 1rem;
-    padding-right: 1em;
     line-height: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
 }
 
 header, footer {
@@ -77,13 +74,16 @@ padding-top: 2rem;
 padding-bottom: 3rem;
 }
 
+.bottom {}
+
 .bottom h5 {
     margin: 0;
-    padding-top: .5rem;
+    padding-top: 1rem;
     padding-bottom: .5rem;
 }
 .bottom ul {
     margin: 0;
+    padding-bottom: .5rem;
 }
 
 .bottom li {
@@ -112,6 +112,7 @@ button {
     text-decoration: none;
     color: white;
 }
+
 
 a:link, a:active, a:visited, a:hover {
     text-decoration: none;
@@ -190,6 +191,10 @@ main p {
 }
 
 
+.middle h2, .middle h3, .middle h4, .middle h5 {
+    padding-top: 1rem;
+}
+
 .narrow {
     max-width: 35rem;
     margin: auto;
@@ -212,6 +217,12 @@ text-align: left;
     text-align: right;
 }
 
+
+.notice {
+    padding-top: .5rem;
+    text-align: center;
+    font-size: small;
+}
 
 pre {
     margin: 0;
