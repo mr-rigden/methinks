@@ -1,0 +1,244 @@
+/* 16px @ 768px increasing to 23px @ 1920px */
+@media (min-width: 768px) {
+    :root {
+      font-size: calc(1rem + (23 - 17) * ((100vw - 768px) / (1920 - 768)));
+      /* Note: The calc base value (1rem) MUST be stated in REM to maintain accessibility */
+      /* Where: calc = min_font_size_in_rem + (max_font_size - min_font_size) * ((100vw - min_viewport_including_px_unit) / (max_viewport - min_viewport)) */
+  
+      /* Safari resize fix */
+      min-height: 0vw;
+    }
+  }
+  /* Prevent scaling beyond this breakpoint */
+  @media (min-width: 1920px) {
+    :root {
+      font-size: 23px;
+    }
+  }
+
+body {
+    overflow-y: scroll;
+    font-family: 'Poppins', sans-serif;
+    color: #202122;
+    overflow-y: scroll;
+
+}
+
+
+
+
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+
+blockquote {
+    border-left: .5rem solid black;
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+    padding-left: 1rem;
+    padding-right: 1em;
+    line-height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+header, footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 2rem;
+    position: fixed; 
+    width: 100%;
+    font-weight: bold;
+     user-select: none;
+
+}
+
+
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}
+
+main {
+padding-top: 2rem;
+padding-bottom: 3rem;
+}
+
+.bottom h5 {
+    margin: 0;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.bottom ul {
+    margin: 0;
+}
+
+.bottom li {
+    padding-bottom: .5rem;
+
+}
+
+button {
+    background-color: black;
+    line-height: 3rem;
+    color: white;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+
+}
+
+.button-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: .5rem;
+
+    
+}
+.clean-white-links a:link, .clean-white-links a:active, .clean-white-links a:visited, .clean-white-links a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+a:link, a:active, a:visited, a:hover {
+    text-decoration: none;
+    color: blue; 
+}
+
+.hidden {
+    display: none;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+.item-date {
+    text-align: right;
+}
+
+
+
+.item-title{
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    margin-right: .5rem;
+    overflow: hidden;
+  
+  }
+
+.list-header {
+    font-weight: bold;
+}
+.list-item {
+    display: grid;
+    grid-template-columns: auto auto;
+    line-height: 1.5em;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black;
+  
+  }
+
+  
+
+  
+
+#menu {
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+    
+
+}
+
+#menu ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+#menu li {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+#menu li:last-child{
+    padding-bottom: 0;
+}
+
+main p {
+    line-height: 2em;
+}
+
+.middle > * {
+    margin-bottom: .5rem;
+}
+
+
+.narrow {
+    max-width: 35rem;
+    margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: 2rem auto 2rem;
+    text-align: center;
+
+}
+
+.nav-bar > div:first-child {
+text-align: left;
+}
+
+.nav-bar > div:last-child {
+    text-align: right;
+}
+
+
+pre {
+    margin: 0;
+ overflow-x: auto;
+ line-height: 2rem;
+ padding: 1rem;
+ border: solid black 1px;
+}
+.subtitle {
+    font-size: smaller;
+    line-height: 1rem;
+}
+
+
+
+.top {
+    line-height: 2rem;
+  padding-top: 1rem;
+  padding-bottom: .75rem;
+  text-align: center;
+}
+
+.top h1 {
+    text-transform: uppercase;
+}
+
+
+
+
+
