@@ -15,7 +15,7 @@ try {
 var shareButton = document.getElementById("share");
 
 function newShare() {
-
+    //Maybe someday :( https://caniuse.com/web-share
     var cta = document.getElementById("share")
     cta.innerHTML = 'Share';
     forwardButton.onclick = function () {
